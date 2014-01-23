@@ -1,0 +1,353 @@
+@import 'bourbon/bourbon';	
+i{
+  color: #b1201a;
+}
+
+/*Max Width
+-------------------------------------------------- */
+
+/*Navigation
+-------------------------------------------------- */
+header{
+  background-color: #fff;
+  box-shadow: 0 0 10px #666;
+
+}
+
+.brand {
+  color: #000;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  &:hover {
+    color: #E3C655;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.navbar{
+  text-align: center;
+  background-color: #fff;
+
+  h1{
+    font-weight: bold;
+  }
+  .nav{
+    li{
+      display: inline-block;
+      padding: 5px 0;
+      font-size: 18px;
+    }
+}  
+  @media (max-width: 992px) {
+    box-shadow: 0 0 10px #666;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-fixed-top{
+  position: static;
+  z-index: 0;
+}
+}
+
+
+/*Major Brand
+-------------------------------------------------- */
+.major-brand{
+  padding: 80px 0 80px 0 ;
+  text-align: left;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  margin: 0 auto;
+  background: url(/img/main-visual.jpg) no-repeat center;
+
+  h1{
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-weight: normal;
+  }
+  
+  .major-brand-thumnail{
+    height: 300px
+    ;
+  }
+
+  img{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+
+  li{
+    display: inline;
+    padding: 0 10px;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+// Major-Brand
+.major-brand{
+  padding-top: 80px;
+
+  h1{
+    font-size: 46px;
+  }
+}
+  /* Unfloat brand */
+  nav{
+    h1{
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 0;
+      margin: 15px 0 ; 
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  @media (min-width: 768px) {
+    nav{
+      .nav{
+        li{
+          float: left;
+        }
+      }    
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+// Major-Brand
+.major-brand{
+  padding-bottom: 25px;
+  h1{
+  font-size: 30px;
+  }
+
+  p{
+  font-size: 16px;
+  margin-bottom: 15px; 
+  } 
+
+  li{
+    display: block;
+    padding: 0 10px;
+  }
+}
+
+
+// Navigation 
+  .navbar{
+      .nav{
+        li{
+          display: block;
+        }
+      }
+    }    
+  }
+
+
+/* Marketing
+-------------------------------------------------- */
+.marketing{
+  padding-top: 40px;
+  
+  .marketing-heading{
+    text-align: center;
+    border-bottom: solid 1px #b1201a;
+  }
+  .marketing-byline{
+    text-align: center;
+  }
+  
+  p{
+    padding-top: 10px;
+  }
+  
+  img{
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  a{
+    color: #E3C655;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+
+    &:hover, &:focus {
+    color: #caa821;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.4);
+    }
+
+    &:focus {
+      outline: thin dotted #333;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+  }
+
+  .marke-thumbnail{
+    padding-left: 10px;
+  }
+
+  .btn{
+    padding: 6px 37%;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 640px) {
+    .heading{
+      width: 41.66667%;
+      float: left;
+    }
+    .marke-thumbnail{
+      width: 58.33333%;
+      padding: 0 0 0 10px;
+      float: left;
+      p{
+        padding: 0 10px;
+      }
+    }
+  }
+
+
+/* infomation
+-------------------------------------------------- */
+.infomation{
+    padding: 40px 0;
+
+  @media (max-width: 991px) {
+    padding-top: 55px;
+  }
+
+.detail-infomation{
+
+  h1{
+    border-left: 10px groove #b1201a;
+    padding-left: 15px;
+  }
+
+  h2{
+    border-left: 12px solid #b1201a;
+    line-height: 25px;
+    padding-left: 20px;
+  }
+
+
+  h3 {
+    border-left: 10px groove #b1201a;
+    line-height: 25px;
+    padding-left: 30px;
+  }
+
+  p{
+    padding-top: 15px;
+  }
+
+  .img{
+    max-width: 940px;
+    margin: 0 auto ;
+  }
+  .contact-heading{
+    border: none;
+    padding-left: 0; 
+  }
+}
+}
+
+/* Book Marketing
+-------------------------------------------------- */
+.book-marketing{
+    h1{
+    border-left: 10px groove #b1201a;
+    padding-left: 15px;
+  }
+
+  p{
+    padding-top: 10px;
+  }
+  
+  img{
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  a{
+    color: #E3C655;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+
+    &:hover, &:focus {
+    color: #caa821;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.4);
+    }
+
+    &:focus {
+      outline: thin dotted #333;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+  }
+
+  .marke-thumbnail{
+    padding-left: 10px;
+  }
+
+  .btn{
+    padding: 6px 37%;
+  }
+
+}
+
+
+
+/* Footer
+-------------------------------------------------- */
+
+footer{
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 30px;
+  border-top: 1px solid #e5e5e5;
+  background-color: #000;
+  box-shadow: 0 0 10px #666;
+
+
+ p {
+  margin-bottom: 0;
+  color: #e3c655;
+}
+}
+
+
+/* Text Arrange
+-------------------------------------------------- */
+.text-moe{
+  color: #F6C2C0;
+}
