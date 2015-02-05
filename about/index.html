@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>サイト名</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="/js/common.js"></script>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<link rel="canonical" href="/" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/css/font-awesome/font-awesome.min.css">
+</head>
+<body>
+<!-- start header -->
+	<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="/about">会社概要</a></li>
+        <li class="nav-link"><a href="/staff">スタッフ紹介</a></li>
+        <li class="nav-link"><a href="/news">番組紹介</a></li>
+        <li class="nav-link"><a href="/recrute">スタッフ募集</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- end header -->
+<!-- Containts -->
+<section>
+        <h1><i class="fa fa-building"></i>会社概要</h1>
+    <!-- Map -->
+      <div id="map_canvas"></div>
+    <!-- End Map -->
+
+      <table>
+        <thead>
+          <tbody>
+        <tr>
+          <th>会社名</th>
+          <td>会社名</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>東京都</td>
+        </tr>
+        <tr>
+          <th>TEL</th>
+          <td>00000000</td>
+        </tr>
+        <tr>
+          <th>FAX</th>
+          <td>0000000</td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th>
+          <td>aaa@aaaaajp</td>
+        </tr>
+        <tr>
+          <th>会社設立</th>
+          <td>0000000</td>
+        </tr>
+        <tr>
+          <th>従業員数</th>
+          <td>0000000</td>
+        </tr>
+        <tr>
+          <th>役員</th>
+          <td>代表取締役社長</td>
+        </tr>
+        <tr>
+          <th>資本金</th>
+          <td>000000000</td>
+        </tr>
+        <tr>
+          <th>事業内容</th>
+          <td>
+            <ul>
+            <li>テレビ番組企画、構成、制作</li>
+            <li>イベント企画、構成、制作</li>
+            <li>キャスティング</li>
+            <li>芸能プロダクション</li>
+            <li>ディレクター、アシスタントディレクター派遣</li>
+            <li>広告代理業</li>
+            <li>ソフトウェア業</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>主要取引先</th>
+          <td>
+            <ul>
+            <li>株式会社TBSテレビ</li>
+            <li>株式会社フジテレビジョン</li>
+            <li>株式会社TBSビジョン</li>
+            <li>株式会社BS-TBS</li> 
+            <li>株式会社BS-朝日</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>取引銀行</th>
+          <td>銀行名</td>
+        </tr>
+          </tbody>
+        </thead>
+      </table>
+</section>
+
+<!-- End Containts -->
+<!-- start footer -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-links">
+    <ul>
+      <li><h3>ーーーについて</h3></li>
+      <li><a href="javascript:void(0)">会社概要</a></li>
+      <li><a href="javascript:void(0)">スタッフ紹介</a></li>
+      <li><a href="javascript:void(0)">番組紹介</a></li>
+    </ul>
+    <ul>
+      <li><h3>採用情報</h3></li>
+      <li><a href="javascript:void(0)">スタッフ募集</a></li>
+      <li><a href="javascript:void(0)">履歴書をダウンロードする</a></li>
+    </ul>
+    <ul>
+      <li><h3>お問い合わせ</h3></li>
+      <li><a href="javascript:void(0)">メールを送る</a></li>
+      <li><a href="tel:000000000">電話：00000000</a></li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <p>コピーライト</p>
+</footer>
+<!-- end footer -->
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  var bittersMap = (function () {
+    var myLatlng = new google.maps.LatLng(59.342457, 18.057340),
+        mapCenter = new google.maps.LatLng(59.340458, 18.057340),
+        mapCanvas = document.getElementById('map_canvas'),
+        mapOptions = {
+          center: mapCenter,
+          zoom: 13,
+          scrollwheel: false,
+          draggable: true,
+          disableDefaultUI: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map(mapCanvas, mapOptions),
+        contentString =
+          '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<div id="bodyContent"'+
+          '<p>Sveavägen 98</p>'+
+          '</div>'+
+          '</div>',
+        infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 300
+        }),
+        marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'thoughtbot (Sweden)'
+        });
+
+    return {
+      init: function () {
+        map.set('styles', [{
+          featureType: 'landscape',
+          elementType: 'geometry',
+          stylers: [
+            { hue: '#ffff00' },
+            { saturation: 30 },
+            { lightness: 10}
+          ]}
+        ]);
+
+        google.maps.event.addListener(marker, 'click', function () {
+          infowindow.open(map,marker);
+        });
+      }
+    };
+  }());
+
+  bittersMap.init();
+</script>
+</body>
+</html>

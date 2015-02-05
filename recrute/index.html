@@ -32,56 +32,61 @@
 </header>
 <!-- end header -->
 <!-- Containts -->
-<div class="hero">
-	<div class="hero-inner">
-    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image"></a>
-		<div class="hero-copy">
-			<h1>メッセージ</h1>
-			<p>スタッフ募集のメッセージや会社概要などの説明を入力してください</p>	
-		</div>
-    <button>募集概要を見る</button>
-	</div>
+<section>
+<h1><i class="fa fa-user-plus"></i>スタッフ募集</h1>
+<div id="js-parallax-window" class="parallax-window">
+  <div class="parallax-static-content">
+    <b>メッセージ</b>
+  </div>
+  <div id="js-parallax-background" class="parallax-background"></div>
 </div>
 
-<section>
 <div class="grid-items-lines">
  <div class="grid-item">
-    <h2><i class="fa fa-user-plus"></i>採用情報</h2>
+    <h2><i class="fa fa-list-ul"></i>採用情報</h2>
     <p>採用情報はこちら</p>
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    <table id="infoList">
+          <tbody>
+            <tr>
+            	<td>募集職種</td>
+            	<td>
+            		<ol class="default">
+              		<li>ディレクター</li>
+              		<li>アシスタントディレクター</li>
+              		</ol>
+          		</td>
+          	</tr>
+            <tr>
+            	<td>募集職種</td>
+            	<td>
+            		<ol class="default">
+              		<li>ディレクター</li>
+              		<li>アシスタントディレクター</li>
+              		</ol>
+          		</td>
+          	</tr>
+            <tr>
+            	<td>募集職種</td>
+            	<td>
+            		<ol class="default">
+              		<li>ディレクター</li>
+              		<li>アシスタントディレクター</li>
+              		</ol>
+          		</td>
+          	</tr>
+         </tbody>
+     </table>
   </div>
   <div class="grid-item grid-item-big">
-		<h2><i class="fa fa-bullhorn"></i></i>お知らせ</h2>
-		<ul id="infoList">
-		    <li>
-		        <dl>
-		            <dt class="date">2014年5月31日</dt>
-		            <dd class="text">
-					ダミーダミーダミーダミーダミーダミーダミーダミーダミー
-					</dd>
-		        </dl>
-		    </li>
+		<h2><i class="fa fa-envelope"></i>応募方法</h2>
+		<article class="aplly">
+		<p>所定の履歴書をダウンロードし、各種項目をご記入の上、メールか郵送にて送ってください。後日、担当者からご連絡致します。</p>	
+		<ul>
+			<li><button>履歴書をダウンロード</button></li>
+			<li><button>応募する！</button></li>
 		</ul>
-		<ul id="infoList">
-		    <li>
-		        <dl>
-		            <dt class="date">2014年5月31日</dt>
-		            <dd class="text">
-					ダミーダミーダミーダミーダミーダミーダミーダミーダミー
-					</dd>
-		        </dl>
-		    </li>
-		</ul>
-		<ul id="infoList">
-		    <li>
-		        <dl>
-		            <dt class="date">2014年5月31日</dt>
-		            <dd class="text">
-					ダミーダミーダミーダミーダミーダミーダミーダミーダミー
-					</dd>
-		        </dl>
-		    </li>
-		</ul>
+		<p class="notice">※メーラーが起動します</p>
+		</article>
   </div>
   <div class="right-cover"></div>
   <div class="bottom-cover"></div>
