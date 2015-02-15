@@ -274,8 +274,7 @@ input[type="submit"] {
       .hero .hero-inner .hero-copy p {
         font-weight: 200;
         line-height: 1.4em;
-        margin: 0 auto 3em auto;
-        text-align: left; }
+        margin: 0 auto 3em auto; }
         @media screen and (min-width: 53.75em) {
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
@@ -287,11 +286,8 @@ input[type="submit"] {
         cursor: not-allowed; }
 
 section {
-  margin: 0 5px; }
-  @media screen and (min-width: 40em) {
-    section {
-      max-width: 950px;
-      margin: 10px auto; } }
+  max-width: 950px;
+  margin: 10px auto; }
   section h1 {
     margin-bottom: 0.4em;
     margin-left: 0.4em; }
@@ -718,7 +714,7 @@ header.navigation {
       text-transform: uppercase; }
     .side-image .side-image-content p {
       color: gray;
-      margin-bottom: 1em; }
+      margin-bottom: 3em; }
     .side-image .side-image-content button {
       padding: 0.7em 1em; }
       .side-image .side-image-content button:disabled {
@@ -805,12 +801,7 @@ header.navigation {
   #infoList td {
     margin: 0 3px; }
   #infoList ol.default {
-    padding-left: 15px;
     list-style-type: decimal;
-    font-size: 0.75em; }
-  #infoList ul.default {
-    font-size: 0.75em; }
-  #infoList p {
     font-size: 0.75em; }
 
 .parallax-window {
@@ -884,4 +875,4 @@ article.aplly {
 body {
   margin: 0; }
 
-/*# sourceMappingURL=common.css.map */
+/*# sourceMappingURL=:.map */

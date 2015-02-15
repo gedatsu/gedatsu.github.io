@@ -52,7 +52,8 @@
       p {
         font-weight: 200;
         line-height: 1.4em;
-        margin: 0 auto 3em auto; 
+        margin: 0 auto 3em auto;
+        text-align: left;
 
         @include media($large-screen) {
           font-size: 1.1em;
@@ -70,11 +71,19 @@
 
 // Main Colmun
 section {
-	max-width: 950px;
-	margin:  10px auto;
-	h1 {
-		margin-bottom: 0.4em;
-	}
+  ///////////////////////////////////////////////////////////////////////////////////
+  $medium-screen: em(640) !default;
+  ///////////////////////////////////////////////////////////////////////////////////
+  @include media($medium-screen) {
+  max-width: 950px;
+  margin:  10px auto;
+  }
+  margin: 0 5px;
+  
+  h1 {
+    margin-bottom: 0.4em;
+    margin-left: 0.4em;
+  }
 }
 
 // News
@@ -695,7 +704,7 @@ header.navigation {
 
     p {
       color: gray;
-      margin-bottom: 3em;
+      margin-bottom: 1em;
     }
 
     button {
@@ -778,7 +787,7 @@ $success-color: #e6efc2 !default;
   
   margin: 0 5px;
   th{
-  border-bottom: 0px;
+  border-bottom: 2px #DDD solid;    
   }
   tr{
   border-bottom: 1px #DDD solid;
@@ -789,12 +798,19 @@ $success-color: #e6efc2 !default;
   }
   ol.default
   {
+    padding-left: 15px;
     list-style-type: decimal;
     font-size: 0.75em;
   }
+  ul.default{
+    font-size: 0.75em;
+  }
+  p{
+    font-size: 0.75em;    
+  }
 }
 
-// Recrutes
+// recruits
 $parallax-window-height: 30em;
 $parallax-background-height: $parallax-window-height * 2;
 
