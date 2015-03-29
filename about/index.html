@@ -106,6 +106,10 @@
           </tbody>
       </table>
   <h1><i class="fa fa-map-marker"></i>アクセス</h1>
+      <ul>
+        <li>東急田園都市線　池尻大橋駅より徒歩７分</li>
+        <li>東急田園都市線　三軒茶屋駅より徒歩８分</li>
+      </ul>
     <!-- Map -->
       <div id="map_canvas"></div>
     <!-- End Map -->
@@ -142,8 +146,8 @@
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
   var bittersMap = (function () {
-    var myLatlng = new google.maps.LatLng(59.342457, 18.057340),
-        mapCenter = new google.maps.LatLng(59.340458, 18.057340),
+    var myLatlng = new google.maps.LatLng(35.6485782,139.680067),
+        mapCenter = new google.maps.LatLng(35.6485782,139.680067),
         mapCanvas = document.getElementById('map_canvas'),
         mapOptions = {
           center: mapCenter,
@@ -158,9 +162,9 @@
           '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<h1 id="firstHeading" class="firstHeading">株式会社アップセット</h1>'+
           '<div id="bodyContent"'+
-          '<p>Sveavägen 98</p>'+
+          '<p>池尻大橋ビル8F</p>'+
           '</div>'+
           '</div>',
         infowindow = new google.maps.InfoWindow({

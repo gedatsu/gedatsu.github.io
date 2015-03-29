@@ -233,8 +233,8 @@ input[type="submit"] {
 
 .hero {
   background-color: #7F99BE;
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(-280deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
+  background: url("../img/hero.jpg"), -webkit-linear-gradient(-280deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
+  background: url("../img/hero.jpg"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -681,8 +681,8 @@ header.navigation {
       table-layout: fixed; } }
   .side-image .images-wrapper {
     background-color: #B5EBEB;
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient( #B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient( #B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
+    background: url("../staff/img/staff-main.jpg"), -webkit-linear-gradient( #B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
+    background: url("../staff/img/staff-main.jpg"), linear-gradient( #B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
     background-color: #B5EBEB;
     background-size: cover;
     border-bottom: 1px solid rgba(38, 74, 38, 0.2);
@@ -693,7 +693,6 @@ header.navigation {
       .side-image .images-wrapper {
         display: table-cell;
         width: 33.33333%;
-        background-position: bottom;
         background-size: cover;
         border-right: 1px solid rgba(38, 74, 38, 0.2); } }
   .side-image .side-image-content {
@@ -827,9 +826,8 @@ header.navigation {
   z-index: 9; }
 
 .parallax-background {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
+  background: url("../recruit/image/rec_main.jpg") repeat;
   background-position: top;
-  background-size: cover;
   background-color: beige;
   height: 60em;
   left: 0;
@@ -858,13 +856,12 @@ article.aplly {
   .comment .comment-image {
     padding-right: 1.4em; }
     .comment .comment-image > img {
-      background: #82a7db;
       border-radius: 3px;
       display: block;
       height: auto;
       max-width: none;
       padding: 0.7em;
-      width: 4em; }
+      max-width: 15em; }
     .comment-reverse-order .comment .comment-image {
       padding-right: 0;
       padding-left: 10px; }

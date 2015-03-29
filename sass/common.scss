@@ -15,7 +15,7 @@
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
-  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+  $hero-image: '../img/hero.jpg';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   background-color: #324766;
@@ -662,7 +662,7 @@ header.navigation {
   }
 
   .images-wrapper {
-    @include background(url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    @include background(url('../staff/img/staff-main.jpg'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     background-size: cover;
     border-bottom: $side-image-border;
@@ -672,7 +672,6 @@ header.navigation {
 
     @include media($large-screen) {
       @include span-columns(4);
-      background-position: bottom;
       background-size: cover;
       border-right: $side-image-border;
     }
@@ -830,9 +829,8 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-background {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
+  background: url("../recruit/image/rec_main.jpg") repeat;
   background-position: top;
-  background-size: cover;
   background-color: beige;
   height: $parallax-background-height;
   left: 0;
@@ -864,11 +862,12 @@ article.aplly{
   $base-accent-color: #477DCA !default;
   $dark-gray: #333 !default;
   $base-font-color: $dark-gray !default;
+  $small-screen: max-width(640xp) !default;
   //////////////////////////////////////////////////////////////////////////////////
 
   $comment-gutter: 1.4em;
   $comment-image-padding: 0.7em;
-  $comment-image-width: 4em;
+  $comment-image-width: 15em;
   $comment-color: $base-font-color;
   $comment-background: lighten($base-accent-color, 15%);
   $comment-detail-color: transparentize($comment-color, 0.5);
@@ -891,13 +890,12 @@ article.aplly{
     padding-right: $comment-gutter;
 
     > img {
-      background: $comment-background;
       border-radius: $base-border-radius;
       display: block;
       height: auto;
       max-width: none;
       padding: $comment-image-padding;
-      width: $comment-image-width;
+      max-width: $comment-image-width;
     }
 
     .comment-reverse-order & {
@@ -908,6 +906,7 @@ article.aplly{
 
   .comment-content {
     width: 100%;
+
 
     h1 {
       font-size: 1em;
