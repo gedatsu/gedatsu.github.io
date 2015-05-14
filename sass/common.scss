@@ -787,6 +787,9 @@ $success-color: #e6efc2 !default;
 #infoList{
   margin: 0 5px;
   h2{
+    padding-bottom: 5px;    
+  }
+  h3{
     font-size: 1.2em;
     border-bottom: 2px #DDD solid;
     padding-bottom: 5px;
@@ -796,10 +799,12 @@ $success-color: #e6efc2 !default;
   }
   tr{
   border-bottom: 1px #DDD solid;
-  margin: 0 3px;
+  margin-left: 5px;
   }
   td{
   margin: 0 3px;
+  font-size: 0.9em;
+  text-align: center;
   }
   ol.default
   {

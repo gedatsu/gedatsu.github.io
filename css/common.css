@@ -799,6 +799,8 @@ header.navigation {
 #infoList {
   margin: 0 5px; }
   #infoList h2 {
+    padding-bottom: 5px; }
+  #infoList h3 {
     font-size: 1.2em;
     border-bottom: 2px #DDD solid;
     padding-bottom: 5px; }
@@ -806,9 +808,11 @@ header.navigation {
     border-bottom: 2px #DDD solid; }
   #infoList tr {
     border-bottom: 1px #DDD solid;
-    margin: 0 3px; }
+    margin-left: 5px; }
   #infoList td {
-    margin: 0 3px; }
+    margin: 0 3px;
+    font-size: 0.9em;
+    text-align: center; }
   #infoList ol.default {
     padding-left: 15px;
     list-style-type: decimal;
