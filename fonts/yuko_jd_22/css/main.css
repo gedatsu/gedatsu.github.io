@@ -1,0 +1,70 @@
+/*product Brand
+-------------------------------------------------- */
+.product-brand {
+  padding: 80px 0 80px 0;
+  text-align: left;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+  margin: 0 auto;
+  background: url(/fonts/yuko_jd_22/main-visual.jpg) no-repeat right;
+}
+.product-brand h1 {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+.product-brand .product-brand-thumnail {
+  height: 300px;
+}
+.product-brand img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.product-brand li {
+  display: inline;
+  padding: 0 10px;
+}
+
+@media (max-width: 991px) {
+  .product-brand {
+    padding-top: 80px;
+  }
+  .product-brand h1 {
+    font-size: 46px;
+  }
+
+  /* Unfloat brand */
+  nav h1 {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 0;
+    margin: 15px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  nav .nav li {
+    float: left;
+  }
+}
+@media (max-width: 768px) {
+  .product-brand {
+    padding-bottom: 25px;
+  }
+  .product-brand h1 {
+    font-size: 30px;
+  }
+  .product-brand p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .product-brand li {
+    display: block;
+    padding: 0 10px;
+  }
